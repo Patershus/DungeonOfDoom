@@ -22,15 +22,47 @@ namespace DungeonsOfDoom
                 Console.Clear();
                 DisplayStats();
                 DisplayWorld();
+                CheckIfEmpty();
                 AskForMovement();
             } while (player.Health > 0);
 
+
             GameOver();
+        }
+
+        private void CheckIfEmpty()
+        {
+            if(world[player.X,player.Y].Item!=null)
+            {
+                if (world[player.X, player.Y].Item.Name=="Sword")
+                {
+                    player.Damage += 5;
+                    Console.WriteLine("You picked up a Sword!");
+                    world[player.X, player.Y].Item = null;
+                }
+                else if(world[player.X, player.Y].Item.Name =="Potion")
+                {
+                    player.Health += 5;
+                    Console.WriteLine("You picked up a Potion!");
+                    world[player.X, player.Y].Item = null;
+                }
+
+            }
+            else if (world[player.X, player.Y].Monster!=null)
+            {
+                player.Health -= world[player.X,player.Y].Monster.Damage;
+                Console.WriteLine("GAHHH!!!");
+                Console.WriteLine("YOU KILLED A MONSTER!");
+                world[player.X, player.Y].Monster=null;
+            }
+
+
         }
 
         void DisplayStats()
         {
             Console.WriteLine($"Health: {player.Health}");
+            Console.WriteLine($"Damage: {player.Damage}");
         }
 
         private void AskForMovement()
