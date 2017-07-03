@@ -14,9 +14,10 @@ namespace DungeonsOfDoom
         public int Health { get; set; }
         public int Damage { get; set; }
 
-        public Character(int health)
+        public Character(int health, int damage)
         {
             Health = health;
+            Damage = damage;
         }
     }
 }

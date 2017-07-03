@@ -100,7 +100,7 @@ namespace DungeonsOfDoom
                     if (player.X != x || player.Y != y)
                     {
                         if (random.Next(0, 100) < 10)
-                            world[x, y].Monster = new Monster(30);
+                            world[x, y].Monster = new Monster(30, 5);
 
                         if (random.Next(0, 100) < 10)
                             world[x, y].Item = new Item("Sword");
@@ -111,7 +111,7 @@ namespace DungeonsOfDoom
 
         private void CreatePlayer()
         {
-            player = new Player(30, 0, 0);
+            player = new Player(30, 0, 0, 5);
         }
     }
 }
