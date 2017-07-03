@@ -68,11 +68,11 @@ namespace DungeonsOfDoom
                 {
                     Room room = world[x, y];
                     if (player.X == x && player.Y == y)
-                        Console.Write("P");
+                        Console.Write($"{player.MapChar}");
                     else if (room.Monster != null)
-                        Console.Write("M");
+                        Console.Write($"{room.Monster.MapChar}");
                     else if (room.Item != null)
-                        Console.Write("I");
+                        Console.Write($"{room.Item.MapChar}");
                     else
                         Console.Write(".");
                 }
