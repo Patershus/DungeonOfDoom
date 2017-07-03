@@ -10,7 +10,7 @@ namespace DungeonsOfDoom
     {
         public Sword() : base("sword", 'I')
         {
-
+           
         }
     }
 }

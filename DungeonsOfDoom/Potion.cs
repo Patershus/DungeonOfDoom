@@ -10,7 +10,8 @@ namespace DungeonsOfDoom
     {
         public Potion(int healing) : base("potion", 'I')
         {
-            Healing = healing;
+            //Healing = healing;
+            
         }
 
         public int Healing { get; set; }
