@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class RoomContent
+    class MapObject
+
     {
-        
+        public char MapChar { get; set; }
+
+        public MapObject(char mapChar)
+        {
+            MapChar = mapChar;
+        }
     }
 }

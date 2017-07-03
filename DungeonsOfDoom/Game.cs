@@ -103,7 +103,7 @@ namespace DungeonsOfDoom
                             world[x, y].Monster = new Monster(30, 5);
 
                         if (random.Next(0, 100) < 10)
-                            world[x, y].Item = new Item("Sword");
+                            world[x, y].Item = new Item("Sword", 'I');
                     }
                 }
             }

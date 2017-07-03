@@ -8,7 +8,7 @@ namespace DungeonsOfDoom
 {
     class Player : Character
     {
-        public Player(int health, int x, int y, int damage) : base(health, damage)
+        public Player(int health, int x, int y, int damage) : base(health, damage, 'P')
         {
             X = x;
             Y = y;

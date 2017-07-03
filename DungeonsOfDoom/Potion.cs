@@ -8,7 +8,7 @@ namespace DungeonsOfDoom
 {
     class Potion : Item
     {
-        public Potion(int healing) : base("potion")
+        public Potion(int healing) : base("potion", 'I')
         {
             Healing = healing;
         }
