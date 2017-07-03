@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class Item
+    class Item : RoomContent
     {
         public Item(string name)
         {

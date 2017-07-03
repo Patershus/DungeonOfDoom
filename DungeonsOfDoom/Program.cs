@@ -14,6 +14,7 @@ namespace DungeonsOfDoom
             game.Play();
 
             //Hallå!
+            //Hallo!
         }
     }
 }

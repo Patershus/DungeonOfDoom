@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class Character
+    class Character : RoomContent
     {
         //int Health;
         //int Damage;
