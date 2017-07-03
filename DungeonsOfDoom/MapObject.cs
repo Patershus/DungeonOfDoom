@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class MapObject
+    abstract class MapObject
 
     {
-        public char MapChar { get; set; }
+        public char MapChar { get; private set; }
 
         public MapObject(char mapChar)
         {

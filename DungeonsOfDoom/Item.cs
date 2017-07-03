@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonsOfDoom
 {
-    class Item : MapObject
+    abstract class Item : MapObject
     {
         public Item(string name, char mapChar) : base(mapChar)
         {
@@ -14,6 +14,6 @@ namespace DungeonsOfDoom
             //Hallo igen
         }
 
-        public string Name { get; set; }
+        public string Name { get; private set; }
     }
 }

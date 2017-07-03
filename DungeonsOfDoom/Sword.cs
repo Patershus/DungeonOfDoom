@@ -8,7 +8,7 @@ namespace DungeonsOfDoom
 {
     class Sword : Item
     {
-        public Sword() : base("sword", 'I')
+        public Sword() : base("Sword", 'I')
         {
            
         }

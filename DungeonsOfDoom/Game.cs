@@ -102,8 +102,10 @@ namespace DungeonsOfDoom
                         if (random.Next(0, 100) < 10)
                             world[x, y].Monster = new Monster(30, 5);
 
-                        if (random.Next(0, 100) < 10)
-                            world[x, y].Item = new Item("Sword", 'I');
+                        if (random.Next(0, 100) < 5)
+                            world[x, y].Item = new Sword();
+                        if (random.Next(0, 100) < 5)
+                            world[x, y].Item = new Potion(5);
                     }
                 }
             }
